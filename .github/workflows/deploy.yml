@@ -33,7 +33,7 @@ jobs:
         run: npm ci
 
       - name: 构建（GitHub Pages 模式）
-        run: npm run build:gh
+        run: npm run build -- --mode=gh-pages
 
       - name: 上传 Pages 产物
         uses: actions/upload-pages-artifact@v3
